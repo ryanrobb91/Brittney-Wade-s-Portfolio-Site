@@ -1,5 +1,19 @@
 <!-- LAYOUT CONTAINER -->
 <!-- Simple header with fixed tabs. -->
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css%22%3E">
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js%22%3E"></script> -->
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
@@ -17,7 +31,7 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Brittney Wade</span>
     <div class="avatar">
-      <img src="pictures/IMG_2266.jpg" alt="" class="avatar-img">
+      <img src="pictures/IMG_2266.jpg" alt="B-Wade" class="avatar-img">
     </div>
     <!-- /.avatar -->
 
@@ -43,7 +57,7 @@
               Let's Make Some Art!!!
             </p>
 
-            <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent kitty-hero__text-button" href="#intro">
+            <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent brittney-hero__text-button" href="#intro">
               <i class="material-icons">keyboard_arrow_down</i>
             </a>
 
@@ -55,7 +69,7 @@
 
         <!-- INTRO -->
         <div id="intro" class="mdl-grid intro-section">
-          <div class="about-kitty mdl-cell mdl-cell--12-col">
+          <div class="about-brittney mdl-cell mdl-cell--12-col">
             <p class="mdl-typography--headline">
               Welcome To My Page!!!
               This is just a start. I'll be adding to this as I go!!
@@ -271,7 +285,7 @@
             <label class="mdl-textfield__label" for="email">Your email</label>
           </div>
           <div class="button-container clearfix">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent subscribe-button">
+            <button id="contactButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent subscribe-button">
               Contact for Booking!!
             </button>
           </div>
@@ -315,3 +329,5 @@
   <!-- /.mdl-layout__content -->
 </div>
 <!-- /.mdl-layout -->
+</body>
+</html>
