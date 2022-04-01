@@ -15,3 +15,5 @@
 580px
 900px
 1200px
+
+site not finished but hopefully finished enough
