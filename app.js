@@ -1,7 +1,4 @@
-
-
 (function($) {
-
     $('a[href^="#"]').on('click', function(e) {
       e.preventDefault();
   
@@ -29,13 +26,12 @@
     //     });
   
   })(jQuery);
-
-
-
-  function myFunction(x) {
-    x.classList.toggle("change");
-    document.getElementById('mobile').classList.toggle("show-menu");
-  };
+// {
+//   (function myFunction(x) 
+//     {x}.classList.toggle("change")
+//     document.getElementById('mobile').classList.toggle("show-menu");
+// };
+  
 //   const email = document.querySelector('#email');
 
 // email.addEventListener('input', () =>{
@@ -47,16 +43,20 @@
 //     emailCheck.style.display = 'inline';
 //     emailX.style.display = 'none';
 
-//   // submit button success
+  // submit button success
 
-//     submitBtn.addEventListener('click', () => {
-//       submitBtn.textContent = 'Submitted';
+    contactButton.addEventListener('click', () => {
+      contactButton.textContent = 'Submitted';
 
-      // Outputs form info to console
-    //   console.log(`
-    //   First Name: ${fName.value}
-    //   Last Name: ${lName.value}
-    //   Email: ${email.value}`);
-//     });
+        Function();
+      console.log(`
+      Your Name: ${yourName.value}
+      
+      Your Email: ${email.value}`);
+
+        function newFunction() {
+            Outputs; form; info; to; console;
+        }
+    });
 //   }
 // });
