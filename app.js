@@ -1,28 +1,62 @@
+
+
 (function($) {
 
-    // $('a[href^="#"]').on('click', function(e) {
-    //   e.preventDefault();
+    $('a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
   
-    //   var target = this.hash;
-    //   var $target = $(target);
+      var target = this.hash;
+      var $target = $(target);
   
-    //   $('.mdl-layout__content').stop().animate({
-    //     'scrollTop': $target.offset().top
-    //   }, 1000, 'swing', function() {
-    //     window.location.hash = target;
-    //   });
-    // });
-    $(document).ready(function(){
-          $("#contactButton").click(function(){
-             console.log("#needEmail");
-          });
-        });
+      $('.mdl-layout__content').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 1000, 'swing', function() {
+        window.location.hash = target;
+      });
+    });
+    // $(document).ready(function(){
+    //       $("#contactButton").click(function(){
+    //          console.log("#needEmail");
+    //       });
+    //     });
     
+        
 
-        $("#contactButton").on('click', function(e) {
-          e.preventDefault();
+    //     $("#contactButton").on('click', function(e) {
+    //       e.preventDefault();
       
-          console.log("test")
-        });
+    //       console.log("test")
+    //     });
   
   })(jQuery);
+
+
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+    document.getElementById('mobile').classList.toggle("show-menu");
+  };
+//   const email = document.querySelector('#email');
+
+// email.addEventListener('input', () =>{
+//   email.setCustomValidity('');
+//   email.checkValidity();
+//   console.log(email.checkValidity());
+//   if(email.validity.valid == true){
+//     email.style.borderColor = '#26Ad1a';
+//     emailCheck.style.display = 'inline';
+//     emailX.style.display = 'none';
+
+//   // submit button success
+
+//     submitBtn.addEventListener('click', () => {
+//       submitBtn.textContent = 'Submitted';
+
+      // Outputs form info to console
+    //   console.log(`
+    //   First Name: ${fName.value}
+    //   Last Name: ${lName.value}
+    //   Email: ${email.value}`);
+//     });
+//   }
+// });

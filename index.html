@@ -3,12 +3,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="app.js"></script>
+  
+  
 
-  <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css%22%3E">
-   <script defer src="https://code.getmdl.io/1.3.0/material.min.js%22%3E"></script> -->
+  
    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
    <link rel="stylesheet" href="styles.css">
 
@@ -31,7 +31,7 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Brittney Wade</span>
     <div class="avatar">
-      <img src="pictures/IMG_2266.jpg" alt="B-Wade" class="avatar-img">
+      <img src="pictures/IMG_2266.jpg" alt="Brittney Wade" class="avatar-img">
     </div>
     <!-- /.avatar -->
 
@@ -46,7 +46,7 @@
 
     <div class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
       <div class="page-content">
-        <!-- Your content goes here -->
+        <!-- Content goes here -->
         <!-- Hero section -->
         <div class="hero-section">
 
@@ -132,7 +132,7 @@
                 Edit me please 3.
               </p>
               <footer>
-                — <cite>Proud Model</cite>
+                — <cite>Model Mentor</cite>
               </footer>
             </blockquote>
 
@@ -152,7 +152,7 @@
 
         <!-- CARDS  -->
         <div class="mdl-grid cards-section">
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp home-bringing-card">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp about-me-card">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">About Me</h2>
             </div>
@@ -161,7 +161,7 @@
             </div>
           </div>
           <!-- /.mdl-card -->
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp play-card">
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp modeling-background-card">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">Modeling Background</h2>
             </div>
@@ -177,16 +177,16 @@
           </div>
           <!-- /.mdl-card -->
 
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp litter-card">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp favorite-shots-card">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Interests</h2>
+              <h2 class="mdl-card__title-text">Favorite Shots</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              Edit for Interests.
+              Edit for Favorite Shots.
             </div>
           </div>
           <!--/.mdl-card -->
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp diet-card">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp new-ideas-card">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">New Ideas</h2>
             </div>
@@ -277,7 +277,7 @@
 
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="name">
+            <input class="mdl-textfield__input" type="text" id="name" required>
             <label class="mdl-textfield__label" for="name">Your name</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -325,9 +325,40 @@
       <!-- /.mdl-mini-footer__left-section -->
     </footer>
 
+    <script>
+      var text = "";
+
+      function getBulletAction(form) {
+          text = form[0].value; //first input element. In this case, the first value is first name
+          return form[0].value;
+      }
+
+      function myFunc(form) {
+          var inputText = getBulletAction(form);
+          if (text == "") {
+              alert("Please add your first name.");
+          } else {
+              document.getElementById("thanks").innerHTML = getAction();
+          }
+      }
+
+      function getAction() { //return the name
+          let message = "Thank you for subscribing, " + text + "!"
+
+          return message;
+      }
+  </script>
+
+
   </main>
   <!-- /.mdl-layout__content -->
 </div>
 <!-- /.mdl-layout -->
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+
+
+
 </html>
