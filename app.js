@@ -1,5 +1,5 @@
 (function($) {
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^=""]').on('click', function(e) {
       e.preventDefault();
   
       var target = this.hash;
@@ -25,7 +25,7 @@
     //       console.log("test")
     //     });
   
-  })(jQuery);
+  });
 // {
 //   (function myFunction(x) 
 //     {x}.classList.toggle("change")
@@ -45,18 +45,18 @@
 
   // submit button success
 
-    contactButton.addEventListener('click', () => {
-      contactButton.textContent = 'Submitted';
+    submit.addEventListener('click', () => {
+      submit.textContent = 'Submitted';
 
-        Function();
-      console.log(`
-      Your Name: ${yourName.value}
+    //     Function();
+    //   console.log(`
+    //   Your Name: ${name.value}
       
-      Your Email: ${email.value}`);
+    //   Your Email: ${email.value}`);
 
-        function newFunction() {
-            Outputs; form; info; to; console;
-        }
-    });
+    //     function newFunction() {
+    //         Outputs; form; info; to; console;
+    //     }
+    // });
 //   }
-// });
+});
