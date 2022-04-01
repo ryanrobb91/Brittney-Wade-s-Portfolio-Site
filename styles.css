@@ -1,3 +1,5 @@
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -176,16 +178,16 @@ img {
     color: white;
   }
   
-  .home-bringing-card .mdl-card__title {
+  .about-me-card .mdl-card__title {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('pictures/IMG_0621.jpg') center / cover;
   }
   
-  .play-card .mdl-card__title {
-    background: url('pictures/IMG_0639.jpg') center / cover;
+  .modeling-background-card .mdl-card__title {
+    background: url('pictures/C507DEDD-2812-4DC9-8DD6-5672BBE046C8.jpg') center / cover;
   }
   
   .image-card {
-    background: url('pictures/IMG_2266.jpg') center / cover;
+    background: url('pictures/_DSC0342b.jpg') center / cover;
   }
   
   .image-card > .mdl-card__actions {
@@ -200,11 +202,11 @@ img {
     font-weight: 500;
   }
   
-  .litter-card .mdl-card__title {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('pictures/IMG_2266.jpg') center / cover;
+  .favorite-shots-card .mdl-card__title {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('pictures/_DSC0361b.jpg') center / cover;
   }
   
-  .diet-card .mdl-card__title {
+  .new-ideas-card .mdl-card__title {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('pictures/IMG_9521.jpg') center / cover;
   }
   
